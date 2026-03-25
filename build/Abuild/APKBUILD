@@ -2,7 +2,7 @@
 # Alpine-Maintainer: Simon Rupf <simon@rupf.net>
 pkgname=man-db
 pkgver=2.13.1
-pkgrel=${pkgrel:-0}
+pkgrel=0
 pkgdesc="The man command and related utilities for examining on-line help files"
 url="https://man-db.gitlab.io/man-db/"
 vcs_url="https://gitlab.com/man-db/man-db"
@@ -35,7 +35,6 @@ package() {
 }
 
 
-options="$options ${DISABLE_CHECK:+!check}"
 sha512sums="
 9b39f512fe940e648ca7f47803f42e473064253b67eb96995d28da30fd322de31a4466bf821e9391e6041af2318a6d2c2d74102b73f4b42a63966b41d2df0578  man-db-2.13.1.tar.xz
 "
